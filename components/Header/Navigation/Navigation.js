@@ -1,17 +1,19 @@
 import React from 'react';
 import Link from 'next/link';
 
-import classes from "./mainHeader.module.css";
+import NavLink from './NavLink';
+
+import classes from "./Navigation.module.css";
 
 const Navigation = () => {
     return (
         <nav className={classes.nav}>
             <ul>
                 <li>
-                    <Link href="/meals">Browse Meals</Link>
+                    <NavLink href="/meals">Browse Meals</NavLink>
                 </li>
                 <li>
-                    <Link href="/community">Foodies Community</Link>
+                    <NavLink href="/community">Community</NavLink>
                 </li>
             </ul>
         </nav>
